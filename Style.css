@@ -1,0 +1,75 @@
+/* Estilos Base */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header.hero {
+    background-color: #004d99; /* Azul de UTP */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header.hero h1 {
+    margin: 0 0 10px;
+}
+
+/* Sección de Información General */
+section.info {
+    padding: 30px 5%;
+    background-color: #e9ecef;
+    border-bottom: 2px solid #ccc;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Sección de Asignaciones/Proyectos */
+main.assignments-section {
+    padding: 40px 5%;
+}
+
+.assignment-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.assignment-card h3 {
+    color: #004d99;
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff; /* Azul de botón */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
