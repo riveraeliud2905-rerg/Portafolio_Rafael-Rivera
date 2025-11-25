@@ -1,75 +1,118 @@
-/* Estilos Base */
+/* Importar tipografía moderna */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* --- ESTILOS GENERALES Y ENCABEZADO --- */
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e; /* Fondo oscuro (look tech) */
+    color: #cccccc; /* Texto gris claro */
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
-    color: #333;
+    line-height: 1.6;
 }
 
-header.hero {
-    background-color: #004d99; /* Azul de UTP */
+header {
+    background-color: #007bff; /* Azul brillante */
     color: white;
-    padding: 60px 20px;
+    padding: 30px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-header.hero h1 {
-    margin: 0 0 10px;
+header h1 {
+    margin-bottom: 5px;
+    font-weight: 700;
 }
 
-/* Sección de Información General */
-section.info {
-    padding: 30px 5%;
-    background-color: #e9ecef;
-    border-bottom: 2px solid #ccc;
+header p {
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+/* --- SECCIÓN PRINCIPAL Y TÍTULOS --- */
+.assignments-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar el contenido */
 }
 
-/* Sección de Asignaciones/Proyectos */
-main.assignments-section {
-    padding: 40px 5%;
+h2 {
+    color: #007bff; /* Título de la sección en azul */
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
 }
 
+/* --- ESTILO DE LAS TARJETAS (NUEVO DISEÑO) --- */
 .assignment-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
+    background-color: #252525; /* Fondo de tarjeta un poco más claro que el body */
+    padding: 25px;
     margin-bottom: 25px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border-left: 5px solid #007bff; /* Barra de color en el lateral */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* EFECTO INTERACTIVO: Flotar al pasar el mouse */
+.assignment-card:hover {
+    transform: translateY(-5px); /* Se mueve ligeramente hacia arriba */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
 }
 
 .assignment-card h3 {
-    color: #004d99;
+    color: #00bfff; /* Título de la tarjeta en azul claro */
     margin-top: 0;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 10px;
 }
 
+.assignment-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* --- ESTILO DEL BLOQUE DE CÓDIGO (PRE) --- */
+pre {
+    background-color: #1a1a1a; /* Fondo muy oscuro para el código */
+    color: #a9b7c6; /* Texto de código legible */
+    border: 1px solid #333;
+    padding: 15px;
+    margin: 15px 0;
+    overflow-x: auto; /* Permite desplazamiento si el código es largo */
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+/* --- ESTILO DE BOTÓN (LINK DE ARCHIVOS) --- */
 .btn {
     display: inline-block;
-    background-color: #007bff; /* Azul de botón */
+    background-color: #007bff;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
 }
 
-/* Pie de página */
+/* --- PIE DE PÁGINA --- */
 footer {
+    background-color: #111;
+    color: #999;
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    padding: 20px 0;
     font-size: 0.9em;
+    border-top: 1px solid #333;
 }
