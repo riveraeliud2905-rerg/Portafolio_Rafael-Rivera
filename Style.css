@@ -102,7 +102,18 @@ code {
     transition: background-color 0.3s ease;
     font-weight: 700;
 }
+/* --- ESTILO PARA BOTONES SECUNDARIOS --- */
+.secondary-btn {
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #00bfff;     /* Borde azul claro */
+    color: #00bfff;                /* Texto azul claro */
+    margin-left: 10px;             /* Separación del botón anterior */
+}
 
+.secondary-btn:hover {
+    background-color: #00bfff;    /* Fondo azul claro al pasar el mouse */
+    color: #1e1e1e;               /* Texto oscuro al pasar el mouse */
+}
 .btn:hover {
     background-color: #0056b3; /* Color más oscuro al pasar el mouse */
 }
